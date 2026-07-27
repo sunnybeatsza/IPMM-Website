@@ -41,12 +41,12 @@ export default function NavBar() {
         <ul className="hidden md:flex items-center gap-6">
           <li><Link className={getLinkClass('/')} href="/">Home</Link></li>
           <li><Link className={getLinkClass('/about')} href="/about">About</Link></li>
-          <li><Link className={getLinkClass('/programs')} href="#">Programs</Link></li>
-          <li><Link className={getLinkClass('/ordination')} href="#">Ordination</Link></li>
+          <li><Link className={getLinkClass('/programs')} href="/programs">Programs</Link></li>
+          <li><Link className={getLinkClass('/ordination')} href="/ordination">Ordination</Link></li>
           <li><Link className={getLinkClass('/events')} href="#">Events</Link></li>
         </ul>
         <div className="flex items-center gap-4">
-          <button className="hidden md:block text-primary font-label-md text-label-md hover:text-secondary transition-colors">Login</button>
+          <Link href="/login" className="hidden md:block text-primary font-label-md text-label-md hover:text-secondary transition-colors">Login</Link>
           <button className="md:hidden text-primary">
             <span className="material-symbols-outlined">menu</span>
           </button>

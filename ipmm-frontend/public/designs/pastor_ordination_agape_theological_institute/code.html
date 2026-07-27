@@ -1,0 +1,437 @@
+<!DOCTYPE html><html lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>The Path to Ordination - Theological Institute</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary-fixed-dim": "#c5c6c8",
+                      "outline-variant": "#c5c5d3",
+                      "primary-fixed-dim": "#b6c4ff",
+                      "on-primary": "#ffffff",
+                      "on-secondary-fixed": "#241a00",
+                      "secondary-fixed-dim": "#e9c349",
+                      "tertiary-fixed": "#e1e2e4",
+                      "on-tertiary-fixed": "#191c1e",
+                      "on-surface-variant": "#444651",
+                      "surface": "#f8f9ff",
+                      "tertiary-container": "#3e4042",
+                      "error-container": "#ffdad6",
+                      "on-primary-container": "#90a8ff",
+                      "surface-container": "#e6eeff",
+                      "surface-variant": "#d9e3f6",
+                      "secondary": "#735c00",
+                      "on-tertiary": "#ffffff",
+                      "on-error-container": "#93000a",
+                      "on-primary-fixed-variant": "#264191",
+                      "background": "#f8f9ff",
+                      "surface-container-low": "#eff4ff",
+                      "on-secondary-fixed-variant": "#574500",
+                      "surface-container-high": "#dee9fc",
+                      "on-secondary": "#ffffff",
+                      "on-secondary-container": "#745c00",
+                      "surface-container-highest": "#d9e3f6",
+                      "primary-container": "#1e3a8a",
+                      "on-tertiary-fixed-variant": "#444749",
+                      "on-tertiary-container": "#aaacae",
+                      "secondary-fixed": "#ffe088",
+                      "surface-tint": "#4059aa",
+                      "inverse-primary": "#b6c4ff",
+                      "primary": "#00236f",
+                      "on-primary-fixed": "#00164e",
+                      "secondary-container": "#fed65b",
+                      "tertiary": "#282a2c",
+                      "on-error": "#ffffff",
+                      "on-background": "#121c2a",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-bright": "#f8f9ff",
+                      "primary-fixed": "#dce1ff",
+                      "surface-dim": "#d0dbed",
+                      "inverse-on-surface": "#eaf1ff",
+                      "inverse-surface": "#27313f",
+                      "error": "#ba1a1a",
+                      "on-surface": "#121c2a",
+                      "outline": "#757682"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "base": "8px",
+                      "container-max": "1280px",
+                      "gutter": "24px",
+                      "margin-desktop": "40px",
+                      "margin-mobile": "16px"
+              },
+              "fontFamily": {
+                      "display-lg": [
+                              "Playfair Display"
+                      ],
+                      "headline-md": [
+                              "Playfair Display"
+                      ],
+                      "label-sm": [
+                              "Inter"
+                      ],
+                      "label-md": [
+                              "Inter"
+                      ],
+                      "headline-sm": [
+                              "Playfair Display"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "display-lg-mobile": [
+                              "Playfair Display"
+                      ]
+              },
+              "fontSize": {
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-sm": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .ambient-shadow-level-2 {
+            box-shadow: 0px 4px 12px rgba(30, 58, 138, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="bg-surface shadow-sm w-full top-0 z-50 sticky">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop h-20">
+<div class="text-headline-sm font-headline-sm font-semibold text-primary">IPMM</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant text-label-md font-label-md hover:text-secondary transition-colors duration-200" href="#">Home</a>
+<a class="text-on-surface-variant text-label-md font-label-md hover:text-secondary transition-colors duration-200" href="#">About</a>
+<a class="text-on-surface-variant text-label-md font-label-md hover:text-secondary transition-colors duration-200" href="#">Programs</a>
+<a class="text-primary border-b-2 border-secondary font-bold pb-1 text-label-md font-label-md hover:text-secondary transition-colors duration-200" href="#">Ordination</a>
+<a class="text-on-surface-variant text-label-md font-label-md hover:text-secondary transition-colors duration-200" href="#">Events</a>
+</div>
+<button class="bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary transition-colors duration-200 px-6 py-2 rounded-full text-label-md font-label-md scale-95 duration-150">
+                Login
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="py-24 px-margin-desktop md:px-margin-desktop bg-surface-container-low relative overflow-hidden">
+<div class="max-w-[720px] mx-auto text-center relative z-10">
+<h1 class="text-display-lg-mobile md:text-display-lg font-display-lg-mobile md:font-display-lg text-primary mb-6">
+                    The Path to Ordination
+                </h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant mb-10">
+                    A sacred journey of preparation, discernment, and commitment. Explore the rigorous and deeply spiritual process of becoming an ordained minister within our tradition.
+                </p>
+<div class="flex justify-center gap-4">
+<button class="bg-secondary text-on-secondary px-8 py-3 rounded-DEFAULT text-label-md font-label-md hover:bg-secondary-container hover:text-on-secondary-container transition-all shadow-md hover:shadow-lg">
+                        Begin Application
+                    </button>
+<button class="border border-primary text-primary px-8 py-3 rounded-DEFAULT text-label-md font-label-md hover:bg-primary-container/10 transition-all">
+                        Download Guide
+                    </button>
+</div>
+</div>
+<div class="absolute inset-0 z-0 opacity-20 pointer-events-none" style="background-image: radial-gradient(circle at 50% 50%, #b6c4ff 0%, transparent 50%);"></div>
+</section>
+<!-- Process Steps Bento -->
+<section class="py-24 px-margin-desktop md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-headline-md font-headline-md text-primary mb-4">Journey of Discernment</h2>
+<p class="text-body-md font-body-md text-on-surface-variant max-w-[720px] mx-auto">
+                    Our four-stage process is designed to support you academically, spiritually, and practically as you prepare for a lifetime of ministry.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Step 1 -->
+<div class="bg-surface rounded-lg p-8 ambient-shadow-level-2 hover:shadow-lg transition-shadow relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="text-[80px] font-display-lg text-primary leading-none">1</span>
+</div>
+<div class="w-12 h-12 bg-primary-container/20 rounded-full flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined" data-icon="description">description</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-primary mb-3">Application</h3>
+<p class="text-body-md font-body-md text-on-surface-variant relative z-10">
+                        Submit your initial dossier, including references, transcripts, and a comprehensive statement of faith and calling.
+                    </p>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface rounded-lg p-8 ambient-shadow-level-2 hover:shadow-lg transition-shadow relative overflow-hidden group mt-0 lg:mt-8">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="text-[80px] font-display-lg text-primary leading-none">2</span>
+</div>
+<div class="w-12 h-12 bg-secondary-container/30 rounded-full flex items-center justify-center mb-6 text-secondary">
+<span class="material-symbols-outlined" data-icon="diversity_3">diversity_3</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-primary mb-3">Mentorship</h3>
+<p class="text-body-md font-body-md text-on-surface-variant relative z-10">
+                        Engage in a 12-month guided mentorship program with a senior pastoral leader, focusing on practical ministry skills.
+                    </p>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface rounded-lg p-8 ambient-shadow-level-2 hover:shadow-lg transition-shadow relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="text-[80px] font-display-lg text-primary leading-none">3</span>
+</div>
+<div class="w-12 h-12 bg-error-container/30 rounded-full flex items-center justify-center mb-6 text-on-error-container">
+<span class="material-symbols-outlined" data-icon="gavel">gavel</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-primary mb-3">Examination</h3>
+<p class="text-body-md font-body-md text-on-surface-variant relative z-10">
+                        Appear before the ordination council for a comprehensive theological, biblical, and pastoral examination.
+                    </p>
+</div>
+<!-- Step 4 -->
+<div class="bg-surface rounded-lg p-8 ambient-shadow-level-2 hover:shadow-lg transition-shadow relative overflow-hidden group mt-0 lg:mt-8">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="text-[80px] font-display-lg text-primary leading-none">4</span>
+</div>
+<div class="w-12 h-12 bg-primary-fixed/50 rounded-full flex items-center justify-center mb-6 text-on-primary-fixed">
+<span class="material-symbols-outlined" data-icon="celebration">celebration</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-primary mb-3">Ceremony</h3>
+<p class="text-body-md font-body-md text-on-surface-variant relative z-10">
+                        The culminating service of laying on of hands, formally recognizing and commissioning you for pastoral ministry.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Eligibility & Documents Split -->
+<section class="py-24 px-margin-desktop md:px-margin-desktop bg-surface-container-high">
+<div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
+<!-- Eligibility Checklist -->
+<div>
+<h2 class="text-headline-md font-headline-md text-primary mb-8">Eligibility Requirements</h2>
+<div class="space-y-4">
+<div class="flex items-start gap-4 bg-surface p-4 rounded-lg ambient-shadow-level-2">
+<span class="material-symbols-outlined text-secondary mt-1" data-icon="check_circle" data-weight="fill">check_circle</span>
+<div>
+<h4 class="text-label-md font-label-md text-on-surface font-bold">Completed M.Div. Degree</h4>
+<p class="text-body-md font-body-md text-on-surface-variant">From an accredited theological institution.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 bg-surface p-4 rounded-lg ambient-shadow-level-2">
+<span class="material-symbols-outlined text-secondary mt-1" data-icon="check_circle" data-weight="fill">check_circle</span>
+<div>
+<h4 class="text-label-md font-label-md text-on-surface font-bold">Active Church Membership</h4>
+<p class="text-body-md font-body-md text-on-surface-variant">Minimum 2 years of active service in a local congregation.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 bg-surface p-4 rounded-lg ambient-shadow-level-2">
+<span class="material-symbols-outlined text-secondary mt-1" data-icon="check_circle" data-weight="fill">check_circle</span>
+<div>
+<h4 class="text-label-md font-label-md text-on-surface font-bold">Clear Background Check</h4>
+<p class="text-body-md font-body-md text-on-surface-variant">Comprehensive moral and legal clearance.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 bg-surface p-4 rounded-lg ambient-shadow-level-2">
+<span class="material-symbols-outlined text-secondary mt-1" data-icon="check_circle" data-weight="fill">check_circle</span>
+<div>
+<h4 class="text-label-md font-label-md text-on-surface font-bold">Endorsement Letter</h4>
+<p class="text-body-md font-body-md text-on-surface-variant">Formal recommendation from current pastoral leadership.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Required Documents -->
+<div>
+<h2 class="text-headline-md font-headline-md text-primary mb-8">Required Documentation</h2>
+<div class="bg-surface rounded-xl p-8 border-l-4 border-secondary ambient-shadow-level-2 h-full">
+<ul class="space-y-6">
+<li class="flex items-center gap-4 border-b border-outline-variant pb-4 last:border-0 last:pb-0">
+<span class="material-symbols-outlined text-outline" data-icon="contract">contract</span>
+<div>
+<h4 class="text-label-md font-label-md text-on-surface">Theological Position Paper</h4>
+<span class="text-label-sm font-label-sm text-outline">PDF Format, Max 15 pages</span>
+</div>
+</li>
+<li class="flex items-center gap-4 border-b border-outline-variant pb-4 last:border-0 last:pb-0">
+<span class="material-symbols-outlined text-outline" data-icon="school">school</span>
+<div>
+<h4 class="text-label-md font-label-md text-on-surface">Official Academic Transcripts</h4>
+<span class="text-label-sm font-label-sm text-outline">Sealed or official digital copy</span>
+</div>
+</li>
+<li class="flex items-center gap-4 border-b border-outline-variant pb-4 last:border-0 last:pb-0">
+<span class="material-symbols-outlined text-outline" data-icon="history_edu">history_edu</span>
+<div>
+<h4 class="text-label-md font-label-md text-on-surface">Spiritual Autobiography</h4>
+<span class="text-label-sm font-label-sm text-outline">Detailing call to ministry (5-7 pages)</span>
+</div>
+</li>
+<li class="flex items-center gap-4 border-b border-outline-variant pb-4 last:border-0 last:pb-0">
+<span class="material-symbols-outlined text-outline" data-icon="recent_patient">recent_patient</span>
+<div>
+<h4 class="text-label-md font-label-md text-on-surface">Three Character References</h4>
+<span class="text-label-sm font-label-sm text-outline">Academic, Pastoral, and Personal</span>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Scripture Callout -->
+<section class="py-16 px-margin-desktop md:px-margin-desktop max-w-[720px] mx-auto">
+<div class="bg-surface-container-low p-8 rounded-r-lg border-l-4 border-secondary ambient-shadow-level-2">
+<blockquote class="text-headline-sm font-headline-sm italic text-primary mb-4">
+                    "And he gave the apostles, the prophets, the evangelists, the shepherds and teachers, to equip the saints for the work of ministry, for building up the body of Christ."
+                </blockquote>
+<cite class="text-label-md font-label-md text-on-surface-variant uppercase tracking-wider block text-right">— Ephesians 4:11-12</cite>
+</div>
+</section>
+<!-- FAQ Accordion -->
+<section class="py-24 px-margin-desktop md:px-margin-desktop max-w-[720px] mx-auto">
+<h2 class="text-headline-md font-headline-md text-primary mb-10 text-center">Frequently Asked Questions</h2>
+<div class="space-y-4">
+<!-- FAQ Item 1 -->
+<details class="group bg-surface rounded-lg ambient-shadow-level-2" open="">
+<summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-label-md font-label-md text-on-surface">
+<span class="">How long does the ordination process typically take?</span>
+<span class="transition group-open:rotate-180">
+<span class="material-symbols-outlined" data-icon="expand_more">expand_more</span>
+</span>
+</summary>
+<div class="text-body-md font-body-md text-on-surface-variant p-6 pt-0">
+                        The process generally takes between 18 to 24 months, depending on the speed at which you complete the mentorship requirements and document submissions.
+                    </div>
+</details>
+<!-- FAQ Item 2 -->
+<details class="group bg-surface rounded-lg ambient-shadow-level-2">
+<summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-label-md font-label-md text-on-surface">
+<span class="">Can I apply before completing my M.Div.?</span>
+<span class="transition group-open:rotate-180">
+<span class="material-symbols-outlined" data-icon="expand_more">expand_more</span>
+</span>
+</summary>
+<div class="text-body-md font-body-md text-on-surface-variant p-6 pt-0">
+                        You may begin the initial application process during your final semester of your M.Div. program, but formal examination cannot occur until degree conferral.
+                    </div>
+</details>
+<!-- FAQ Item 3 -->
+<details class="group bg-surface rounded-lg ambient-shadow-level-2">
+<summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-label-md font-label-md text-on-surface">
+<span class="">Is there an application fee?</span>
+<span class="transition group-open:rotate-180">
+<span class="material-symbols-outlined" data-icon="expand_more">expand_more</span>
+</span>
+</summary>
+<div class="text-body-md font-body-md text-on-surface-variant p-6 pt-0">
+                        Yes, there is a non-refundable $150 processing fee required upon submission of your initial dossier to cover administrative and background check costs.
+                    </div>
+</details>
+</div>
+</section>
+<!-- Contact Advisor CTA -->
+<section class="py-24 px-margin-desktop md:px-margin-desktop">
+<div class="max-w-container-max mx-auto bg-primary text-on-primary rounded-xl overflow-hidden flex flex-col md:flex-row items-center ambient-shadow-level-2 relative">
+<div class="absolute inset-0 bg-primary-container opacity-20" style="background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.05) 10px, rgba(255,255,255,0.05) 20px);"></div>
+<div class="p-12 md:w-2/3 relative z-10">
+<h2 class="text-headline-md font-headline-md mb-4">Need Guidance on Your Journey?</h2>
+<p class="text-body-md font-body-md text-primary-fixed-dim mb-8 max-w-xl">
+                        Our ordination advisors are available to discuss your specific calling, review your eligibility, and answer any questions you have about the process.
+                    </p>
+<button class="bg-secondary text-on-secondary px-8 py-3 rounded-DEFAULT text-label-md font-label-md hover:bg-secondary-fixed hover:text-on-secondary-fixed transition-colors shadow-sm inline-flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="calendar_month">calendar_month</span>
+                        Schedule a Consultation
+                    </button>
+</div>
+<div class="md:w-1/3 p-12 flex justify-center relative z-10">
+<div class="w-32 h-32 bg-surface rounded-full flex items-center justify-center text-primary ambient-shadow-level-2">
+<span class="material-symbols-outlined text-[64px]" data-icon="support_agent">support_agent</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-tertiary w-full">
+<div class="max-w-container-max mx-auto px-margin-desktop py-16 flex flex-wrap justify-between gap-gutter">
+<div class="w-full md:w-auto mb-8 md:mb-0">
+<div class="text-headline-sm font-headline-sm text-on-tertiary mb-4">IPMM</div>
+<p class="text-body-md font-body-md text-on-tertiary max-w-xs">© 2024 IPMM for Pastoral Excellence. Stewardship &amp; Serenity.</p>
+</div>
+<div class="flex flex-col gap-4">
+<a class="text-tertiary-fixed-dim text-label-sm font-label-sm hover:text-secondary-fixed-dim transition-colors opacity-80 hover:opacity-100" href="#">Contact Us</a>
+<a class="text-tertiary-fixed-dim text-label-sm font-label-sm hover:text-secondary-fixed-dim transition-colors opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="text-tertiary-fixed-dim text-label-sm font-label-sm hover:text-secondary-fixed-dim transition-colors opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="text-tertiary-fixed-dim text-label-sm font-label-sm hover:text-secondary-fixed-dim transition-colors opacity-80 hover:opacity-100" href="#">Giving</a>
+<a class="text-tertiary-fixed-dim text-label-sm font-label-sm hover:text-secondary-fixed-dim transition-colors opacity-80 hover:opacity-100" href="#">Faculty Directory</a>
+</div>
+</div>
+</footer>
+</body></html>
