@@ -45,10 +45,10 @@ export default function EventsAndLeadership() {
             <div className="bg-surface-container rounded-xl p-8 flex-grow relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16 blur-2xl"></div>
               <div className="flex items-center gap-6 mb-6">
-                <img className="w-24 h-24 rounded-full object-cover border-4 border-surface shadow-md" alt="Portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8Nh8LeiNVpEeB0-S9bUpSrM0p2uODkhlcL-sBMR3JiWozGNBbpM5c2Kp3i2X1w2-CmgNHBBrfskn79AAYQEsohOkb0Uf1RhL5a8XysvbGpNRASdHmLpVtW_ICrYI7c6ILqaoOF5xAeTeCAakwQA4pYu0NyWUp3ZW8MH_Urjzb_XWqd3wbfzpAMrOHxMxN1y8dDqaQRRGLdCCZXXj88-FEX4UeS4ygWvU-qygFij8zqzn22PyQWJr5MSRY6DNU3AraAzcioFUjHak" />
+                <img className="w-24 h-24 rounded-full object-cover border-4 border-surface shadow-md" alt="Apostle GM Masemola" src="/images/Apostle GM Masemola.jpeg" />
                 <div>
-                  <h4 className="text-headline-sm font-headline-sm text-primary">Dr. Elias Thorne</h4>
-                  <p className="text-label-md font-label-md text-secondary">Founder &amp; President</p>
+                  <h4 className="text-headline-sm font-headline-sm text-primary">Apostle GM Masemola</h4>
+                  <p className="text-label-md font-label-md text-secondary">Founder &amp; Visionary</p>
                 </div>
               </div>
               <div className="relative">

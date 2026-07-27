@@ -2,7 +2,7 @@ export default function HistoryNarrative() {
   return (
     <section className="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
       <div className="md:col-span-5 md:col-start-2">
-        <img className="rounded-lg shadow-sm object-cover w-full h-[500px]" alt="A beautiful, high-quality black and white architectural photograph" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeFB2KyWOPpqWq5FA_RZejPm0fFmPTgiFi5c6kdBatT3Mair59eeqGdKwc1DaAX_6FzWqkNWIOb89-xN-PD3I082zeFN8XAPzw-4AcTKhJ15MN-Rgv4pdZquP69_uN3UOeHPpOdVG_WMt08PqfE9VveNNelohv71gXzYVbwfG2JqZOt0VvkVWG4OoNiLfKWlT5BJB-kx8z57QXqoQHSIVFzJxve28nJhVfHelhi0POxtuNMGy_gWlaANT06NDxhClRb5bDHciEGa8" />
+        <img className="rounded-lg shadow-sm object-cover w-full h-[500px]" alt="IPMM Group Photo" src="/images/Group_photo_IPMM.jpeg" />
       </div>
       <div className="md:col-span-5 flex flex-col justify-center">
         <h2 className="font-headline-md text-headline-md text-primary mb-6">A Foundation of Faith</h2>
