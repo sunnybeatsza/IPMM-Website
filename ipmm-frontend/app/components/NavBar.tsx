@@ -1,8 +1,12 @@
 "use client";
 
 import { useEffect } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function NavBar() {
+  const pathname = usePathname();
+
   useEffect(() => {
     const handleScroll = () => {
       const nav = document.getElementById('top-nav');
@@ -20,18 +24,26 @@ export default function NavBar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const getLinkClass = (path: string) => {
+    const isActive = pathname === path;
+    if (isActive) {
+      return "text-primary border-b-2 border-secondary font-bold pb-1 text-label-md font-label-md transition-colors duration-200";
+    }
+    return "text-on-surface-variant hover:text-secondary transition-colors duration-200 text-label-md font-label-md";
+  };
+
   return (
     <nav className="w-full top-0 bg-surface shadow-sm z-50 sticky transition-all duration-300" id="top-nav">
       <div className="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-20">
-        <a className="text-headline-sm font-headline-sm font-semibold text-primary flex items-center gap-2" href="#">
+        <Link className="text-headline-sm font-headline-sm font-semibold text-primary flex items-center gap-2" href="/">
           <span className="material-symbols-outlined text-primary" style={{ fontVariationSettings: '"FILL" 1' }}>menu_book</span> IPMM
-        </a>
+        </Link>
         <ul className="hidden md:flex items-center gap-6">
-          <li><a className="text-primary border-b-2 border-secondary font-bold pb-1 text-label-md font-label-md transition-colors duration-200" href="#">Home</a></li>
-          <li><a className="text-on-surface-variant hover:text-secondary transition-colors duration-200 text-label-md font-label-md" href="#">About</a></li>
-          <li><a className="text-on-surface-variant hover:text-secondary transition-colors duration-200 text-label-md font-label-md" href="#">Programs</a></li>
-          <li><a className="text-on-surface-variant hover:text-secondary transition-colors duration-200 text-label-md font-label-md" href="#">Ordination</a></li>
-          <li><a className="text-on-surface-variant hover:text-secondary transition-colors duration-200 text-label-md font-label-md" href="#">Events</a></li>
+          <li><Link className={getLinkClass('/')} href="/">Home</Link></li>
+          <li><Link className={getLinkClass('/about')} href="/about">About</Link></li>
+          <li><Link className={getLinkClass('/programs')} href="#">Programs</Link></li>
+          <li><Link className={getLinkClass('/ordination')} href="#">Ordination</Link></li>
+          <li><Link className={getLinkClass('/events')} href="#">Events</Link></li>
         </ul>
         <div className="flex items-center gap-4">
           <button className="hidden md:block text-primary font-label-md text-label-md hover:text-secondary transition-colors">Login</button>
