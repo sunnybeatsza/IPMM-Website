@@ -43,7 +43,7 @@ export default function NavBar() {
           <li><Link className={getLinkClass('/about')} href="/about">About</Link></li>
           <li><Link className={getLinkClass('/programs')} href="/programs">Programs</Link></li>
           <li><Link className={getLinkClass('/ordination')} href="/ordination">Ordination</Link></li>
-          <li><Link className={getLinkClass('/events')} href="#">Events</Link></li>
+          <li><Link className={getLinkClass('/events')} href="/events">Events</Link></li>
         </ul>
         <div className="flex items-center gap-4">
           <Link href="/login" className="hidden md:block text-primary font-label-md text-label-md hover:text-secondary transition-colors">Login</Link>
